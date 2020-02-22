@@ -23,7 +23,7 @@ class Owner
   def species
     
     @species
-    
+    binding.pry
   end
   
   def say_species
@@ -92,5 +92,19 @@ class Owner
     
    end
     
+
+   #walk_do = Dog.new(name, self)
+   #walk_do.mood ="happy"
+   #walk_do
+    #binding.pry
     
+    #Dog.mood =="happy"
+ 
+ # end
+
+    def sell_pets
+     [Dog.all, Cat.all].each {|value_instance| value_instance.mood = "nervous"}
+     
+     #binding.pry
+    end
 end
